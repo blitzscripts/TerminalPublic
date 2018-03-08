@@ -1,3 +1,4 @@
+from Character import *
 from Quest import *
 #Some sort of inner ability script
 #Zephryms cleaned up Inner Pot defs
@@ -38,3 +39,8 @@ def getInnerPot():
     innerPot1()
     innerPot2()
     innerPot3()
+
+if level > 100():
+    getInnerPot()
+else:
+    print("We are not over level 100")
