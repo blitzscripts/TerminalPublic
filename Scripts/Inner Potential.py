@@ -1,4 +1,5 @@
 # For Premium terminal users. By Zephrym
+# DEVELOPMENT FLAG : This may be broken if you try to run it
 
 # Run this script to enable the first 3 inner potentials.
 
@@ -23,7 +24,7 @@ def innerPot1():
     n = 9010000
     c = s != 2
     if c:
-        StartQuest(q, n)`
+        StartQuest(q,n)`
 
 def innerPot2():
     #data taken from https://www.gamekiller.net/threads/auto-inner-quests.3260592/
@@ -32,7 +33,7 @@ def innerPot2():
     n = 9010000
     c = s != 2
     if c:
-        StartQuest(q, n)
+        StartQuest(q,n)
 
 def innerPot3():
     #data taken from https://www.gamekiller.net/threads/auto-inner-quests.3260592/
@@ -41,7 +42,7 @@ def innerPot3():
     n = 9010000
     c = s != 2
     if c:
-        StartQuest(q, n)
+        StartQuest(q,n)
 
 level = GetLevel()
 
