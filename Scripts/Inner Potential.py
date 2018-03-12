@@ -14,37 +14,44 @@
 #     1 = have in log
 #     2 = done or ready to be turned in
 
+from time import sleep
+
 from Character import *
 from Quest import *
+from GameState import IsInGame
+
+gDelay = 1
+level = GetLevel()
 
 def innerPot1():
     #data taken from https://www.gamekiller.net/threads/auto-inner-quests.3260592/
     q = 12394
     s = GetQuestState(q)
     n = 9010000
-    c = s != 2
+    c = s != 2 and IsInGame()
     if c:
-        StartQuest(q,n)`
+        StartQuest(q,n)
+        sleep(gDelay)
 
 def innerPot2():
     #data taken from https://www.gamekiller.net/threads/auto-inner-quests.3260592/
     q = 12395
     s = GetQuestState(q)
     n = 9010000
-    c = s != 2
+    c = s != 2 and IsInGame()
     if c:
         StartQuest(q,n)
+        sleep(gDelay)
 
 def innerPot3():
     #data taken from https://www.gamekiller.net/threads/auto-inner-quests.3260592/
     q = 12396
     s = GetQuestState(q)
     n = 9010000
-    c = s != 2
+    c = s != 2 and IsInGame()
     if c:
         StartQuest(q,n)
-
-level = GetLevel()
+        sleep(gDelay)
 
 if level > 29:
     innerPot1()
@@ -52,5 +59,5 @@ if level > 29:
 if level > 59:
     innerPot2()
 
-if level > 99:
+if level > 69:
     innerPot3()
