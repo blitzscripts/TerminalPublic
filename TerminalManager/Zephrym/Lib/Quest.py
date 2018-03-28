@@ -10,7 +10,7 @@ warning = "[zLib]:"
 class Quest:
 
         def StartQuest(nQuestID, dwNpcTemplateID):
-        print(warning, "Starts Quest with ID", nQuestID, "from NPC with ID", dwNpcTemplateID)
+            print(warning, "Starts Quest with ID", nQuestID, "from NPC with ID", dwNpcTemplateID)
 
         def CompleteQuest(nQuestID, dwNpcTemplateID):
             print(warning, "Completes Quest with ID", nQuestID, "from NPC with ID", dwNpcTemplateID)
