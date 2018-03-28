@@ -7,21 +7,18 @@
 """
 
 warning = "[zLib]:"
+class Quest:
 
+        def StartQuest(nQuestID, dwNpcTemplateID):
+        print(warning, "Starts Quest with ID", nQuestID, "from NPC with ID", dwNpcTemplateID)
 
-def StartQuest(nQuestID, dwNpcTemplateID):
-    print(warning, "Starts Quest with ID", nQuestID, "from NPC with ID", dwNpcTemplateID)
+    def CompleteQuest(nQuestID, dwNpcTemplateID):
+        print(warning, "Completes Quest with ID", nQuestID, "from NPC with ID", dwNpcTemplateID)
 
+    def GetQuestState(nQuestID):
+        print(warning, "Returns QuestState from Quest with ID", nQuestID)
+        return 1
 
-def CompleteQuest(nQuestID, dwNpcTemplateID):
-    print(warning, "Completes Quest with ID", nQuestID, "from NPC with ID", dwNpcTemplateID)
-
-
-def GetQuestState(nQuestID):
-    print(warning, "Returns QuestState from Quest with ID", nQuestID)
-    return 1
-
-
-def CheckCompleteDemand(nQuestID, dwNpcTemplateID):
-    print(warning, "returns wether or not Quest with ID", nQuestID, "from NPC with ID", dwNpcTemplateID)
-    return 0
+    def CheckCompleteDemand(nQuestID, dwNpcTemplateID):
+        print(warning, "returns wether or not Quest with ID", nQuestID, "from NPC with ID", dwNpcTemplateID)
+        return 0
