@@ -54,7 +54,7 @@ else:
 # region Main Script Logic
     # TODO: Your script starts here
         #FIXME: Write a script from your list of todos to see if this shit even works
-        test = Field.FindMob(2).x
+        Settings.skill_injection("Bad value")
     # FIXME: Your script ends here
 # endregion
 
