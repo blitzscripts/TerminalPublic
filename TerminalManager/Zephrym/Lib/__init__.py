@@ -2,17 +2,16 @@
 #* Main initializer for Zephrym's Lib
 TODO: Finish Converting heavily imperative methods to a more functional style to avoid staircases and pyramids of doom.
 """
-import time, gc
+import time
+import gc
 
-version = 1.04
+version = 1.05
 text = "[zLib](" + str(version) + "):"
 print(text, "is initializing.")
 s = time.time()
 import fnmatch
 import os
-from Lib.Settings import Settings
-
-try:
+try:  # In-Game Imports
     import Character
     import Context
     import DataType
@@ -26,17 +25,20 @@ try:
     import Terminal
     from Lib.Npc import *
     from Lib.Player import *
-except ModuleNotFoundError:
-    from Lib.Character import *
-    from Lib.Field import *
-    from Lib.GameState import *
-    from Lib.Inventory import *
-    from Lib.Key import *
-    from Lib.Npc import *
-    from Lib.Player import *
-    from Lib.Packet import *
-    from Lib.Quest import *
+except ModuleNotFoundError:  # IDE-Only Imports
+    from Lib.Character import Character
+    from Lib.Field import Field
+    from Lib.GameState import GameState
+    from Lib.Inventory import Inventory
+    from Lib.Key import Key
+    from Lib.Npc import Npc
+    from Lib.Player import Player
+    from Lib.Packet import Packet
+    from Lib.Quest import Quest
     from Lib.Terminal import Terminal
+
+from Lib.Settings import *
+
 
 def dispose(message, wait = 1, printdeleted = False):
     s = time.time()

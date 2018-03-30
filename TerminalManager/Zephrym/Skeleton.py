@@ -26,22 +26,18 @@
             # TODO: This is how you track a TODO outside a summary. Only use 1 # not 2
             FIXME: TODO rules apply to FIXME
 
-TODO : Finish Settings.py
-TODO : Finish Player.py
-TODO : Finish Npc.py
-TODO : Finish Map.py
-TODO : Clean up Library file structure then initial release.
-
 #*   Getting Started:
      1.) Make a copy of your Skeleton.py and rename it as you please.
      2.) Inside your Renamed.py Fill out your script inside the Main Script Logic Region. -- See guide for more details
+     3.) You can safely remove this entire doc string to not have clutter at the top of your script.
 """
 
 
 # region Setup
 import os
 import sys
-if not any("Zephrym" in s for s in sys.path): sys.path.append(os.getcwd() + "\Zephrym")
+if not any("Zephrym" in s for s in sys.path):
+    sys.path.append(os.getcwd() + "\Zephrym")
 else:
     try: from Lib import *
     except ModuleNotFoundError:
@@ -52,10 +48,7 @@ else:
 # endregion
 
 # region Main Script Logic
-    # TODO: Your script starts here
-        #FIXME: Write a script from your list of todos to see if this shit even works
-        Settings.skill_injection("Bad value")
-    # FIXME: Your script ends here
+# TODO: Your script goes here. Do not indent
 # endregion
 
 # region Garbage Collection

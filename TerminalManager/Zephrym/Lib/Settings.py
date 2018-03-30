@@ -8,7 +8,7 @@ TODO: Add in a more user friendly implementation of radio buttons.
         FIXME: Review this class before initial release. If you see this then you are on the pre-release version
 
 """
-
+text = "[zLib]:"
 import inspect
 
 try:
