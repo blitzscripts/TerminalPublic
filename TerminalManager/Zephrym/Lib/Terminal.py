@@ -40,7 +40,7 @@ class Terminal:
         print(text, "Saves your current profile")
 
     @staticmethod
-    def LogOut():
+    def Logout():
         print(text, "Logs your character out")
 
     @staticmethod
