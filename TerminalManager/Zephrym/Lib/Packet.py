@@ -1,6 +1,7 @@
 """_Summary
 #* Default Terminal API:
     Contains packet functions
+	FIXME: Packet.py is a placeholder. Please pull request any changes you would like for now
 """
 
 class Packet:
