@@ -75,3 +75,11 @@ class Terminal:
     @staticmethod
     def AutoCube(cubeid, slot, grade):
         print(text, "uses a cube with an id of", cubeid, "on the slot", slot, "without a grade of", grade, "1-4")
+
+    @staticmethod
+    def EnterCashShop():
+        print("Character moved to cash shop")
+
+    @staticmethod
+    def LeaveCashShop():
+        print("Character moved out of the cash shop")
