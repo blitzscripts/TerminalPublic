@@ -23,12 +23,16 @@ try:  # In-Game Imports
     import Packet
     import Quest
     import Terminal
+    from Lib.Npc import *
+    from Lib.Player import *
 except ModuleNotFoundError:  # IDE-Only Imports
     from Lib.Character import Character
     from Lib.Field import Field
     from Lib.GameState import GameState
     from Lib.Inventory import Inventory
     from Lib.Key import Key
+    from Lib.Npc import Npc
+    from Lib.Player import Player
     from Lib.Packet import Packet
     from Lib.Quest import Quest
     from Lib.Terminal import Terminal
